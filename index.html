@@ -122,6 +122,16 @@ a {
    .list dt, .list dd {
        width: 100% !important;
    }
+
+   .list dt {
+
+    /* Since we're hiding elements behind here, we need it in 3d */
+    -webkit-transform: translateZ(0px);
+    -moz-transform: translateZ(0px);
+    -ms-transform: translateZ(0px);
+    -o-transform: translateZ(0px);
+    transform: translateZ(0px);
+   }
 }
 
 .list dt {
